@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Formik, Field, Form } from 'formik';
-import FormGroup from './FormGroup';
+import FormGroup from '../FormGroup';
 
 export default function SignInForm() {
   const initialValues = {

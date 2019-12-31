@@ -1,23 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
-function Header() {
-  return (
-    <header className='nav-header'>
-      E <span className='nav-header__highlight'>M</span>
-    </header>
-  );
-}
-
-function NavLink({ children, to }) {
-  return (
-    <li className='nav-menu__item'>
-      <Link className='nav-menu__link' to={`/${to}`}>
-        {children}
-      </Link>
-    </li>
-  );
-}
+import Header from '../nav/Header';
+import NavLink from '../nav/NavLink';
 
 export default function Nav() {
   return (

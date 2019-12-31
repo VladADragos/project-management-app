@@ -24,24 +24,17 @@
 .hero {
   z-index: 3;
   margin: auto;
-  //   border: 3px solid red;
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 70%;
   justify-content: space-evenly;
-  //   justify-items: center;
-  //   align-self: center;
-  //   border: 3px solid red;
 }
 .hero__header {
   font-family: 'dancing script', cursive;
   font-weight: 700;
   font-size: 8rem;
-  //   color: $accent-blue;
   color: #ffc857;
-  //   display: flex;
-  //   align-content: baseline;
   line-height: 1;
   margin-block-end: 0rem;
 }
@@ -51,12 +44,11 @@
   font-weight: 500;
   font-size: 7rem;
   line-height: 6rem;
-  //   margin-;
   display: block;
 }
 .hero__sub-header {
+  color: hsl(221, 20%, 30%);
   font-size: 2rem;
-  opacity: 0.6;
 }
 
 .hero-info {

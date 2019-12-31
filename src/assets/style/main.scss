@@ -3,27 +3,28 @@
 html {
   font-size: 10px;
   line-height: 1;
-}
-
-.app {
   font-family: 'Lato', sans-serif;
 }
+
 .button {
   border: none;
   background: none;
   padding: 1.2rem 1.5rem;
   font-size: 2rem;
 }
-.link {
-  font-size: 2rem;
+a {
   text-decoration: none;
   color: inherit;
+}
+.link {
+  font-size: 2rem;
   &:hover {
     text-decoration: underline;
   }
 }
 $shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 $background-blue: #e1ebf5;
+$dark-blue: hsl(207, 100%, 8%);
 $accent-blue: #4e6882;
 $black: #112130;
 $white: #f3f3f3;
@@ -38,4 +39,71 @@ $white: #f3f3f3;
 .button--cta {
   background: $black;
   color: $white;
+}
+
+// DEMO
+
+.app-nav {
+  min-width: 20%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: sticky;
+  background: $dark-blue;
+  padding: 4rem;
+}
+.app-nav-inner {
+}
+.app-nav-menu {
+  margin-top: 3rem;
+  .nav-menu__item {
+    margin: 0rem 0rem 1.5rem;
+  }
+  .link {
+    color: white;
+    font-size: 2.5rem;
+  }
+}
+
+.demo {
+  display: flex;
+  align-items: flex-start;
+}
+
+.board {
+  background: rgb(245, 245, 245);
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 5rem;
+  padding: 5rem;
+}
+.column {
+  background: rgb(245, 245, 245);
+  box-shadow: $shadow;
+  font-size: 2rem;
+  padding: 2rem 3rem;
+  text-align: center;
+}
+.task-list {
+  &:hover {
+    background: hsl(207, 100%, 50%);
+  }
+}
+.task {
+  margin: 0rem 0rem 1rem;
+  // padding: 1rem 0rem;
+  padding: 1rem 2rem;
+  // text-align: center;
+  background: hsl(207, 20%, 20%);
+  // background: hsl(207, 100%, 8%);
+  color: white;
+  font-size: 2.5rem;
+  box-shadow: $shadow;
+}
+.task-inner {
 }
