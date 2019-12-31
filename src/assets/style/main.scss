@@ -1,0 +1,41 @@
+@import url(~sanitize.css);
+
+html {
+  font-size: 10px;
+  line-height: 1;
+}
+
+.app {
+  font-family: 'Lato', sans-serif;
+}
+.button {
+  border: none;
+  background: none;
+  padding: 1.2rem 1.5rem;
+  font-size: 2rem;
+}
+.link {
+  font-size: 2rem;
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+$shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+$background-blue: #e1ebf5;
+$accent-blue: #4e6882;
+$black: #112130;
+$white: #f3f3f3;
+
+@import './navbar.scss';
+@import './landingPage.scss';
+@import './auth.scss';
+
+.hero__button {
+  font-size: 3rem;
+}
+.button--cta {
+  background: $black;
+  color: $white;
+}
