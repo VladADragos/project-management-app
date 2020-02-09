@@ -14,9 +14,16 @@
   color: #ffc857;
 
   border: #ffc857 3px solid;
-  padding: 0rem 2rem;
+  padding: .75rem 1.5rem;
   border-radius: 10%;
+  display: block;
   z-index: 3;
+  white-space: nowrap;
+  opacity: .5;
+  transition: all .4s ease-out;
+  &:hover{
+    opacity: 1;
+  }
 }
 .nav-header__highlight {
   //   font-size: 4rem;
@@ -26,12 +33,12 @@
 
 .nav-menu {
   display: flex;
-  font-size: 1.8rem;
 }
 .nav-menu__item {
   margin: 0rem 1rem;
   margin-block-start: 0rem;
   margin-block-end: 0rem;
+
   &:hover {
     text-decoration: underline;
     opacity: 0.85;
@@ -43,3 +50,35 @@
   text-transform: capitalize;
   color: $black;
 }
+
+// 
+
+.app-nav {
+  // min-width: 6%;
+  padding: 2rem 2rem 0rem 2rem;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: sticky;
+  background: $dark-blue;
+  background: #092542;
+  // padding: 2rem;
+}
+.app-nav-inner {
+}
+.app-nav-menu {
+  // margin-top: 3rem;
+  .nav-menu__item {
+    margin: 2rem 0rem;
+  }
+  .link {
+    font-size: 3rem;
+    color: white;
+    color: #004182;
+      // font-size: 3.5rem;
+  }
+  
+}
+

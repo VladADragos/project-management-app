@@ -1,0 +1,1 @@
+export const profile = { icon: "fa-user-circle", title: "profile", paragraph: "Allows you to search through projects " };

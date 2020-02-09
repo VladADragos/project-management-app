@@ -21,6 +21,9 @@ function App() {
         <Route path='/demo'>
           <Demo />
         </Route>
+        <Route path='/your-data'>
+          <Demo />
+        </Route>
         <Route exact path='/sign-in'>
           <SignIn />
         </Route>

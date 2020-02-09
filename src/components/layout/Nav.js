@@ -9,6 +9,7 @@ export default function Nav() {
       <ul className='nav-menu'>
         <NavLink to=''>home</NavLink>
         <NavLink to='about'>about</NavLink>
+        <NavLink to='your-data'>your data</NavLink>
         <NavLink to='demo'>demo</NavLink>
         <NavLink to='sign-up'>sign-up</NavLink>
         <NavLink to='sign-in'>sign-in</NavLink>

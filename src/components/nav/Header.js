@@ -5,7 +5,8 @@ export default function Header() {
   return (
     <Link to='/'>
       <header className='nav-header'>
-        E <span className='nav-header__highlight'>M</span>
+        E
+        <span className='nav-header__highlight'>M</span>
       </header>
     </Link>
   );
